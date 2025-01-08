@@ -1,0 +1,94 @@
+.container {
+  width: 300px;
+  background: rgba(255, 255, 255, 0.15);
+  backdrop-filter: blur(10px);
+  border-radius: 12px;
+  box-shadow: 0 8px 32px rgba(31, 38, 135, 0.37);
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  position: absolute;
+  top: calc(10vh + 16px);
+  right: 5px;
+  overflow: hidden;
+  transition: all 0.3s ease;
+  height: 80vh;
+  overflow-y: scroll;
+  
+}
+::-webkit-scrollbar {
+  display: none; /* For Chrome, Safari, and Opera */
+}
+
+.header {
+  padding: 20px;
+  background: rgba(255, 255, 255, 0.1);
+}
+
+.header h4 {
+  font-size: 1.1rem;
+  font-weight: 500;
+  color: #333;
+  margin-bottom: 5px;
+}
+
+.header p {
+  font-size: 0.9rem;
+  color: #666;
+}
+
+.container hr {
+  border: none;
+  background: rgba(255, 255, 255, 0.2);
+  height: 1px;
+  margin: 0;
+}
+
+.settings, .menu {
+  display: flex;
+  align-items: center;
+  padding: 12px 20px;
+  transition: background-color 0.2s ease;
+}
+
+.settings:hover, .menu:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+.settings h6,
+.menu h6 {
+  color: #333;
+  font-size: 0.9rem;
+  font-weight: 400;
+  margin-left: 8px;
+}
+
+.settings h6 span {
+  color: #999;
+  font-size: 0.8rem;
+}
+
+.icon {
+  font-size: 1.2rem;
+  color: #555;
+}
+
+.menus {
+  padding: 3px 0;
+}
+
+.container:hover {
+  cursor: default;
+  box-shadow: 0 8px 32px rgba(31, 38, 135, 0.4);
+}
+
+.menu:hover {
+  cursor: pointer;
+}
+
+.logoutButton {
+  background-color: rgba(255, 59, 48, 0.1);
+  color: #ff3b30;
+}
+
+.logoutButton:hover {
+  background-color: rgba(255, 59, 48, 0.2);
+}

@@ -1,0 +1,193 @@
+.container {
+  display: flex;
+  /* margin-top: ; */
+  margin-left: 5px;
+  flex-direction: column;
+  height: 95%;
+  background-color: #ffffff;
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.searchContainer {
+  display: flex;
+  align-items: center;
+  padding: 12px 16px;
+  border-bottom: 1px solid #e0e0e0;
+}
+
+.searchIcon {
+  color: #757575;
+  margin-right: 8px;
+}
+
+.search {
+  flex-grow: 1;
+  border: none;
+  font-size: 14px;
+  color: #333;
+  padding: 8px 0;
+}
+
+.search:focus {
+  outline: none;
+}
+
+.counts {
+  font-size: 12px;
+  color: #757575;
+  margin-left: 8px;
+}
+
+.list {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  overflow-y: auto;
+  flex-grow: 1;
+}
+
+.listItem {
+  border-bottom: 1px solid #e0e0e0;
+  padding: 12px 16px;
+  transition: background-color 0.3s ease;
+}
+
+.listItem:hover {
+  background-color: #f5f5f5;
+}
+
+.item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.stockInfo {
+  display: flex;
+  flex-direction: column;
+}
+
+.stockName {
+  font-size: 14px;
+  font-weight: 500;
+  color: #333;
+  margin: 0;
+}
+
+.stockSymbol {
+  font-size: 12px;
+  color: #757575;
+  margin: 0;
+}
+
+.priceInfo {
+  text-align: right;
+}
+
+.price {
+  font-size: 14px;
+  font-weight: 500;
+  color: #333;
+  display: block;
+}
+
+.up, .down {
+  font-size: 12px;
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+
+.up {
+  color: #4caf50;
+}
+
+.down {
+  color: #f44336;
+}
+
+.actions {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 8px;
+}
+
+.actions button {
+  width: 28px;
+  height: 28px;
+  border-radius: 4px;
+  border: none;
+  margin-left: 4px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 12px;
+  transition: background-color 0.3s ease;
+}
+
+.buy {
+  background-color: #4caf50;
+  color: white;
+}
+
+.sell {
+  background-color: #f44336;
+  color: white;
+}
+
+.action {
+  background-color: #e0e0e0;
+  color: #333;
+}
+
+.watchlistFooter {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px 16px;
+  border-top: 1px solid #e0e0e0;
+}
+
+.watchlistFooter ul {
+  display: flex;
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.watchlistFooter li {
+  width: 28px;
+  height: 28px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  background-color: #e0e0e0;
+  color: #333;
+  font-size: 12px;
+  margin-right: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.watchlistFooter li:hover {
+  background-color: #bdbdbd;
+}
+
+.watchlistFooter li.active {
+  background-color: #2196f3;
+  color: white;
+}
+
+.settings {
+  cursor: pointer;
+  color: #757575;
+  transition: color 0.3s ease;
+}
+
+.settings:hover {
+  color: #333;
+}
+

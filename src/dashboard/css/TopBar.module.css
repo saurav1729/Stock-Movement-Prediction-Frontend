@@ -1,0 +1,93 @@
+.container {
+  width: 100%;
+  height: 70px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #ffffff;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  padding: 0 20px;
+  box-sizing: border-box;
+}
+
+.logo {
+  flex: 0 0 auto;
+}
+
+.logoImage {
+  height: 40px;
+  width: auto;
+}
+
+.indicesContainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex: 1 1 auto;
+}
+
+.indexItem {
+  display: flex;
+  align-items: center;
+  margin: 0 15px;
+}
+
+.indexName {
+  font-size: 14px;
+  font-weight: 600;
+  color: #333;
+  margin-right: 10px;
+}
+
+.indexValue {
+  font-size: 14px;
+  font-weight: 500;
+  color: #666;
+  margin-right: 5px;
+}
+
+.indexChange {
+  font-size: 14px;
+  font-weight: 500;
+  padding: 2px 5px;
+  border-radius: 3px;
+}
+
+.up {
+  color: #4caf50;
+  background-color: rgba(76, 175, 80, 0.1);
+}
+
+.down {
+  color: #f44336;
+  background-color: rgba(244, 67, 54, 0.1);
+}
+
+@media (max-width: 900px) {
+  .container {
+    flex-wrap: wrap;
+    height: auto;
+    padding: 10px;
+  }
+
+  .logo {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 10px;
+  }
+
+  .indicesContainer {
+    width: 100%;
+    justify-content: space-around;
+    margin-bottom: 10px;
+  }
+
+  .indexItem {
+    margin: 0 5px;
+  }
+
+  .indexName, .indexValue, .indexChange {
+    font-size: 12px;
+  }
+}
+
