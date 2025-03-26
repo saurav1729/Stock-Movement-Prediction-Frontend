@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useContext } from "react";
 import { useNavigate } from "react-router-dom";
 import {
   MdAdjust,
@@ -9,24 +9,25 @@ import {
   MdPersonAdd,
   MdThumbsUpDown,
 } from "react-icons/md";
-import { signout } from "../../auth/helpers";
+// import { signout } from "../../auth/helpers";
 import styles from "../css/ProfileDropdown.module.css";
+import AuthContext from "../../auth/context/AuthContext";
 
 
 const ProfileDropdown = () => {
+  const authCtx = useContext(AuthContext); 
   const navigate = useNavigate();
 
   const handleLogoutClick = () => {
-    signout()
-      .then(() => navigate("/"))
+      authCtx.logout.then(() => navigate("/"))
       .catch((err) => console.log(err));
   };
 
   return (
     <div className={styles.container}>
       <div className={styles.header}>
-        <h4>Saurav Jha</h4>
-        <p>saurav@gmail.com</p>
+        <h4>{authCtx?.user?.full_name||"user"}</h4>
+        <p>{authCtx.user.email||"user@gmail.com"}</p>
       </div>
       <hr />
       <div className={styles.settings}>

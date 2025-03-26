@@ -12,6 +12,7 @@
   transition: all 0.3s ease;
   height: 80vh;
   overflow-y: scroll;
+  z-index: 10;
   
 }
 ::-webkit-scrollbar {
@@ -50,7 +51,7 @@
 }
 
 .settings:hover, .menu:hover {
-  background-color: rgba(255, 255, 255, 0.1);
+  background-color: rgba(255, 255, 225, 0.6);
 }
 
 .settings h6,

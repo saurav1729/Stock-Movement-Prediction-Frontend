@@ -4,7 +4,7 @@ import Home from "./dashboard/pages/Home";
 import Login from "./auth/pages/Login";
 import PrivateRoute from "./auth/helpers/PrivateRoute";
 import { Outlet } from "react-router-dom";
-import Orders from "./dashboard/components/Orders";
+// import Orders from "./dashboard/components/Orders";
 import Signup from "./auth/pages/signup";
 
 const Layout = () => (
@@ -13,7 +13,6 @@ const Layout = () => (
     <div style={{"width":"100vw"}} className="bg-gradient-to-t from-[#cfd9df] to-[#e2ebf0]">
       <Outlet />
     </div>
-    {/* Add your Footer here if needed */}
   </div>
 );
 
@@ -32,12 +31,12 @@ function App() {
           <Route element={<Layout />}>
             <Route element={<PrivateRoute />}>
               <Route path="/" element={<Home />} />
-              <Route path="/orders" element={<Orders/>} />
+              {/* <Route path="/orders" element={<Orders/>} /> */}
             </Route>
           </Route>
 
           {/* Public Routes */}
-        \
+        
           <Route element={<AuthLayout />}>
             <Route path="/login" element={<Login />} />
             <Route path="/signup" element={<Signup />} />

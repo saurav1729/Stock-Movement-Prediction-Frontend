@@ -1,5 +1,5 @@
 import React, { Fragment, useEffect } from "react";
-import Dashboard from "../components/Dashboard";
+import Dashboard from "../components/DashboardMain";
 import TopBar from "../components/TopBar";
 
 const Home = () => {
